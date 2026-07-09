@@ -11,6 +11,20 @@ end
 report_dir = File.join("reports", "junit")
 FileUtils.mkdir_p(report_dir)
 
+# Keep gems in the workspace to avoid permission issues on CI agents.
+# Jenkinsfile sets BUNDLE_PATH at the pipeline level; this is a fallback for local runs.
+ENV["BUNDLE_PATH"] ||= File.join("vendor", "bundle")
+
+# RUBYOPT may be set in the Jenkins agent environment with legacy flags (e.g. -F)
+# that are not valid in Ruby 3.x. Clear it to avoid RuntimeError on startup.
+ENV.delete("RUBYOPT")
+
+# Use plain "bundle" (resolved via PATH) to avoid broken paths with spaces on Windows.
+unless system("bundle", "check")
+  warn "Missing gems detected; running bundle install..."
+  exit(1) unless system("bundle", "install", "--jobs", "4", "--retry", "3")
+end
+
 command = [
   "bundle",
   "exec",
