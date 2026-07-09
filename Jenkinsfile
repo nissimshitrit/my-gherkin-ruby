@@ -28,36 +28,40 @@ pipeline {
       }
     }
 
-    // stage('Bundle Install') {
-    //   steps {
-    //     catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-    //       bat '''
-    //         setlocal EnableExtensions
+    stage('Bundle Install') {
+      steps {
+        catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+          bat """
+            setlocal EnableExtensions
+            set "RUBYOPT="
 
-    //         echo Ruby version:
-    //         ruby --version
+            echo Ruby version:
+            ruby --version
 
-    //         echo --- Updating RubyGems to latest (fixes Windows path-with-spaces bug in Bundler) ---
-    //         gem update --system --no-document
+            echo --- Updating RubyGems to latest (fixes Windows path-with-spaces bug in Bundler) ---
+            gem update --system --no-document
 
-    //         echo --- Installing latest Bundler ---
-    //         gem install bundler --no-document
+            rem Install the exact Bundler version pinned in Gemfile.lock so "bundle" does not
+            rem try to auto-install it on the fly, which is what triggers the Windows
+            rem "C /Program Files/..." path bug.
+            echo --- Installing pinned Bundler version ---
+            gem install bundler --version 4.0.15 --no-document
 
-    //         echo Bundler version:
-    //         bundle --version
+            echo Bundler version:
+            bundle --version
 
-    //         echo --- Installing project gems ---
-    //         bundle check
-    //         if errorlevel 1 (
-    //           echo Gems missing. Running bundle install...
-    //           bundle install --jobs 4 --retry 3
-    //         )
+            echo --- Installing project gems ---
+            bundle check
+            if errorlevel 1 (
+              echo Gems missing. Running bundle install...
+              bundle install --jobs 4 --retry 3
+            )
 
-    //         echo Bundle complete. Gems path: %BUNDLE_PATH%
-    //       '''
-    //     }
-    //   }
-    // }
+            echo Bundle complete. Gems path: %BUNDLE_PATH%
+          """
+        }
+      }
+    }
 
     stage('Run Cucumber (Ruby)') {
       steps {
