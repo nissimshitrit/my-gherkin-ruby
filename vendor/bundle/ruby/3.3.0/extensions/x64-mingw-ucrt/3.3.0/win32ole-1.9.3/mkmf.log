@@ -1,0 +1,262 @@
+have_library: checking for -lole32... -------------------- yes
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -o conftest.exe -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -L"C:/Program Files/Ruby33-x64/lib" -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lx64-ucrt-ruby330  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -o conftest.exe -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -L"C:/Program Files/Ruby33-x64/lib" -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed     -lx64-ucrt-ruby330 -lole32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for -loleaut32... -------------------- yes
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -o conftest.exe -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -L"C:/Program Files/Ruby33-x64/lib" -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed    -lole32  -lx64-ucrt-ruby330 -loleaut32 -lole32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for &CLSID_CMultiLanguage() in -luuid... -------------------- yes
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -o conftest.exe -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -L"C:/Program Files/Ruby33-x64/lib" -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed    -loleaut32 -lole32  -lx64-ucrt-ruby330 -luuid -loleaut32 -lole32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: #include <mlang.h>
+ 6: 
+ 7: /*top*/
+ 8: extern int t(void);
+ 9: int main(int argc, char **argv)
+10: {
+11:   if (argc > 1000000) {
+12:     int (* volatile tp)(void)=(int (*)(void))&t;
+13:     printf("%d", (*tp)());
+14:   }
+15: 
+16:   return !!argv[argc];
+17: }
+18: int t(void) { const volatile void *volatile p; p = (const volatile void *)&CLSID_CMultiLanguage; return !p; }
+/* end */
+
+--------------------
+
+have_library: checking for -luser32... -------------------- yes
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -o conftest.exe -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -L"C:/Program Files/Ruby33-x64/lib" -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed    -luuid -loleaut32 -lole32  -lx64-ucrt-ruby330 -luser32 -luuid -loleaut32 -lole32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for -lkernel32... -------------------- yes
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -o conftest.exe -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -L"C:/Program Files/Ruby33-x64/lib" -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed    -luser32 -luuid -loleaut32 -lole32  -lx64-ucrt-ruby330 -lkernel32 -luser32 -luuid -loleaut32 -lole32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for -ladvapi32... -------------------- yes
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -o conftest.exe -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -L"C:/Program Files/Ruby33-x64/lib" -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed    -lkernel32 -luser32 -luuid -loleaut32 -lole32  -lx64-ucrt-ruby330 -ladvapi32 -lkernel32 -luser32 -luuid -loleaut32 -lole32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for windows.h... -------------------- yes
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <windows.h>
+/* end */
+
+--------------------
+
+have_type: checking for IMultiLanguage2 in mlang.h... -------------------- yes
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <mlang.h>
+6: 
+7: /*top*/
+8: typedef IMultiLanguage2 conftest_type;
+9: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+create_win32ole_makefile: checking for thread_specific... -------------------- __thread
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong   -Werror -c conftest.c"
+conftest.c:5:1: error: 'thread' attribute directive ignored [-Werror=attributes]
+    5 | __declspec(thread) int foo;
+      | ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: __declspec(thread) int foo;
+/* end */
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong   -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: __thread int foo;
+/* end */
+
+--------------------
+
+have_func: checking for rb_deprecate_constant(Qnil, "")... -------------------- yes
+
+PATH=".;C:/Program Files/Ruby33-x64/lib;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Ruby33-x64\msys64\ucrt64\bin;C:\Program Files\Ruby33-x64\msys64\usr\bin;C:\Program Files\Ruby33-x64\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Ruby33-x64\bin;%ProgramFiles%\Eclipse Adoptium\jdk-21.0.6.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\dev\tools\java\maven\apache-maven-3.8.6\bin;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Users\nshitrit\AppData\Local\Programs\Git\bin\;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\projects\php;C:\projects\composer;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\nshitrit\AppData\Local\Programs\Python\Launcher\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python310\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\nshitrit\AppData\Local\Programs\Python\Python37-32\;C:\Users\nshitrit\AppData\Local\Microsoft\WindowsApps;C:\Users\nshitrit\AppData\Local\Programs\Git\cmd;C:\Users\nshitrit\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\nshitrit\AppData\Local\Yarn\bin;C:\Users\nshitrit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nshitrit\AppData\Roaming\Composer\vendor\bin" "gcc -o conftest.exe -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0/x64-mingw-ucrt" -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0"/ruby/backward -I"C:/Program Files/Ruby33-x64/include/ruby-3.3.0" -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -L"C:/Program Files/Ruby33-x64/lib" -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed    -ladvapi32 -lkernel32 -luser32 -luuid -loleaut32 -lole32  -lx64-ucrt-ruby330 -ladvapi32 -lkernel32 -luser32 -luuid -loleaut32 -lole32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { char s1[1024]; rb_deprecate_constant(Qnil, s1); return 0; }
+/* end */
+
+--------------------
+
